@@ -15,7 +15,7 @@ jobs:
           command: |
             alias helm=/tmp/helm/bin/linux-amd64/helm
             if [ "$CIRCLE_BRANCH" = "master" ]; then
-              helm repo add int128 https://entone.github.io/helm-charts
+              helm repo add entone https://entone.github.io/helm-charts
               helm repo update
               helm repo list
               helm inspect entone/example
